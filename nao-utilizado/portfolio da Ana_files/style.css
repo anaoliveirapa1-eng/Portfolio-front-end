@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b69b9f
+}
+
+a {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    background-color: #b69b9f;
+
+    .topbar {
+        width: 64rem;
+        height: 2rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .social {
+            display: flex;
+
+            ul {
+                display: flex;
+                gap: 1rem;
+
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    nav {
+        width: 100%rem;
+        height: 4rem;
+        background-color: rgba(197, 183, 179, 0.922);
+        display: flex;
+        justify-content: center;
+
+        ul {
+            height: 4rem;
+            display: flex;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    height: 4rem;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 1rem;
+                    color: rgb(37, 36, 36);
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: #b69b9f;
+                    }
+
+                }
+
+                align-self: hover;
+            }
+        }
+
+    }
+}
+
+#home,
+#sobre {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(220, 215, 210, 0.881), rgb(180, 173, 164));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .conteudo {
+        width: 64rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        .texto {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+
+            h1 {
+                font-size: 4rem;
+                font-weight: 100;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 300;
+                text-align: center;
+            }
+
+            .cta {
+                display: flex;
+                border: 1px solid rgb(37, 36, 36);
+                width: 50%;
+                height: 3rem;
+                border-radius: 2rem;
+                justify-content: center;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background-color: #b69b9f;
+                color: black;
+
+                &:hover {
+                    border: 1px solid rgb(243, 221, 194);
+                    background-color: black;
+                    color: rgba(248, 244, 228, 0.938);
+                }
+            }
+        }
+
+        .foto {
+            width: 30rem;
+            height: 30rem;
+            background-color: rgb(109, 105, 105);
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: center;
+                object-position: center;
+            }
+        }
+    }
+}
+
+#trabalhos {
+    width: 100%;
+    background-color: #b69b9f;
+    background-image: linear-gradient(rgb(180, 173, 164), rgb(165, 140, 107));
+
+    .cards {
+        width: 64rem;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+
+        .card {
+            width: 15.25rem;
+            border: 1px solid black;
+            padding: 1rem;
+            border-radius: .5rem;
+            background-color: rgb(225, 211, 214);
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                text-align: center;
+            }
+
+            .imagem {
+                width: 100%;
+                aspect-ratio: 1/1;
+                background-color: #b1a4a6;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+
+                }
+            }
+
+            .btn {
+                width: 100%;
+                height: 2rem;
+                border: 1px solid black;
+                border-radius: .50rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #b69b9f;
+                color: black;
+                font-family: sans-serif;
+                box-shadow: 5px 5px 8px grey;
+
+                &:hover {
+                    box-shadow: 0 0 8px grey;
+                    background-color: black;
+                    color: #b69b9f;
+                }
+            }
+        }
+    }
+}
+
+#sobre {
+    background-image: linear-gradient(rgb(165, 140, 107), rgb(176, 161, 142));
+
+    .conteudo {
+        flex-direction: row-reverse;
+        gap: 1rem;
+    }
+}

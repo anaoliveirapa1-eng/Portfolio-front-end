@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio da Ana</title>
+    <!--  -->
+    
+
+<link rel="stylesheet" href="./portfolio da Ana_files/style.css"></head>
+
+<body>
+    <header>
+        <!--(.topbar>.logo+.social>ul>li*3>a{Rede $})+(nav>ul>li*4>a{menu $})-->
+
+
+        <div class="topbar">
+
+            <div class="logo">
+                Ana
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/">Instagram</a></li>
+                    <li><a href="http://127.0.0.1:5500/">Rede social 1</a></li>
+                    <li><a href="http://127.0.0.1:5500/">Rede social 2</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/">Trabalhos</a>
+                </li><li><a href="http://127.0.0.1:5500/">Sobre</a>
+                </li><li><a href="http://127.0.0.1:5500/">Contatos</a>
+            </li></ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="home">
+            <div class="conteudo">
+                <h1> Ana Oliveira</h1>
+                <h2>Desenvolvedora Web</h2>
+                <a href="http://127.0.0.1:5500/" class="cta">Entre em contato</a>
+                <div class="foto">
+                    <img src="./portfolio da Ana_files/experiencia-em-programacao-com-pessoa-a-trabalhar-com-codigos-no-computador_23-2150010125.avif" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="trabalhos">
+            <div class="cards">
+                <div class="card">
+                    <h3>Título</h3>
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <p>Descrição</p>
+                    <a href="http://127.0.0.1:5500/" class="btn">Saiba mais...</a>
+                </div>
+                <div class="card">
+                    <h3>Título</h3>
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <p>Descrição</p>
+                    <a href="http://127.0.0.1:5500/" class="btn">Saiba mais...</a>
+                </div>
+                <div class="card">
+                    <h3>Título</h3>
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <p>Descrição</p>
+                    <a href="http://127.0.0.1:5500/" class="btn">Saiba mais...</a>
+                </div>
+                <div class="card">
+                    <h3>Título</h3>
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <p>Descrição</p>
+                    <a href="http://127.0.0.1:5500/" class="btn">Saiba mais...</a>
+                </div>
+                <div class="card">
+                    <h3>Título</h3>
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <p>Descrição</p>
+                    <a href="http://127.0.0.1:5500/" class="btn">Saiba mais...</a>
+                </div>
+                <div class="card">
+                    <h3>Título</h3>
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <p>Descrição</p>
+                    <a href="http://127.0.0.1:5500/" class="btn">Saiba mais...</a>
+                </div>
+                <div class="card">
+                    <h3>Título</h3>
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <p>Descrição</p>
+                    <a href="http://127.0.0.1:5500/" class="btn">Saiba mais...</a>
+                </div>
+                <div class="card">
+                    <h3>Título</h3>
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <p>Descrição</p>
+                    <a href="http://127.0.0.1:5500/" class="btn">Saiba mais...</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="sobre">
+
+        </section>
+
+        <section id="contatos">
+
+        </section>
+
+
+    </main>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
