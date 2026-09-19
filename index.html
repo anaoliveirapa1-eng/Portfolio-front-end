@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <script src="js/script.js" defer></script>
+    <script src="js/fontawewsome.js" defer></script>
 
 </head>
 
@@ -22,7 +23,7 @@
         <div class="topbar">
 
             <div class="logo">
-                Ana
+                <i class="ph ph-laptop"></i>
             </div>
             <div class="social">
                 <ul>
@@ -35,6 +36,9 @@
         </div>
         <nav>
             <ul>
+                <button type="button" id="btnMenu">
+                    <img src="assets/list.svg" alt="">
+                </button>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#trabalhos">Trabalhos</a>
                 <li><a href="#sobre">Sobre</a>
@@ -131,7 +135,7 @@
             <div class="conteudo">
                 <div class="texto">
                     <h2>Sobre mim</h2>
-                    <p> Olá meu nome é Ana Oliveira, tenho 38 anos e sou estudante de Analise e desenvolvimento de
+                    <p> Olá meu nome é Ana Oliveira, sou estudante de Analise e desenvolvimento de
                         sistemas, python e web Design.
                     </p>
                     <p>Após uma solida tragetória de 10 anos de experiência profisssional no setor de confecção e gestão
@@ -167,16 +171,16 @@
                 <div class="formulario">
                     <form>
                         <label for="nome">Nome completo:</label>
-                        <input type="text" name="nome" id="nome">
+                        <input type="text" name="nome" id="nome" required>
                         <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email">
-                        <label for="tel">telefone</label>
-                        <input type="tel" name="Telefone" id="telefone">
+                        <input type="email" name="email" id="email" required>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" required>
                         <label for="msg">Mensagem:</label>
-                        <textarea name="msg" id="msg"></textarea>
+                        <textarea name="msg" id="msg" required></textarea>
                         <div class="btns">
                             <button type="reset">Limpar</button>
-                            <button type="button">Enviar</button>
+                            <button type="button" id="enviar">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -187,6 +191,25 @@
 
 
     </main>
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+        <div class="modal-content">
+            <button type="button" class="btnclose" arial-label="fecharModal">
+                <i class="ph ph-x"></i>
+            </button>
+            <div class="card modal-card">
+                <div class="jobFoto">
+                    <img id="modalImg" src="" alt="">
+                </div>
+                <div clas="text">
+                    <h3 id="titleModal"></h3>
+                    <span class="tipo" id="modalTipo"></span>
+                    <p id="modalDesc"></p>
+                    <a href="" target="_blank" rel="noopener noreferr" class="btnModalLink" id="modalLink">
+                        ver projeto online <i class="ph ph-arrow-arc-right"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>&copy;2026. Portifolio Ana Oliveira.</p>
     </footer>
